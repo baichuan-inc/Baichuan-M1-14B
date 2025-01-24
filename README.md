@@ -391,6 +391,6 @@ print(response)
 ---
 <a name="declare"></a>
 # 📜 协议与声明
-对模型的使用需遵循[《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan2/blob/main/Baichuan-M1-14B模型社区许可协议.pdf)。
+对模型的使用需遵循[《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan-M1-14B/blob/main/Baichuan-M1-14B模型社区许可协议.pdf)。
 
 百川的开发团队未基于此模型开发任何商业应用，所有使用者需遵循法律法规，不得将模型用于危害国家安全或违法用途。
