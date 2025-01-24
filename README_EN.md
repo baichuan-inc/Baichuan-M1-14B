@@ -25,7 +25,7 @@
 - [⚙️ Training Methodology](#training)
 - [📊 Benchmark Results](#benchmark)
 - [🚀 Quick Start](#quick)
-- [📜 Declaration](#declare)
+- [📜 License and Statment](#declare)
 
 ---
 <a name="intro"></a>
@@ -388,6 +388,7 @@ print(response)
 
 ---
 <a name="declare"></a>
-# 📜 Statement
+# 📜 License and Statement
+The use of the model must comply with [《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan2/blob/main/Baichuan-M1-14B模型社区许可协议.pdf).
 
 The development team of Baichuan has not developed any commercial applications based on this model. All users must comply with laws and regulations and must not use the model for harmful national security or illegal purposes.
