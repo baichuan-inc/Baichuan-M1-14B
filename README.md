@@ -391,6 +391,6 @@ print(response)
 ---
 <a name="declare"></a>
 # 📜 协议与声明
-如果将 Baichuan-M1 模型或其衍生品用作商业用途，请您按照如下方式联系许可方：联系邮箱：opensource@baichuan-inc.com，具体信息可见 [《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan-M1-14B/blob/main/Baichuan-M1-14B模型社区许可协议.pdf)。
+如果将 Baichuan-M1 模型或其衍生品用作商业用途，请您按照如下方式联系许可方：联系邮箱：opensource.contact@baichuan-inc.com，具体信息可见 [《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan-M1-14B/blob/main/Baichuan-M1-14B模型社区许可协议.pdf)。
 
 所有使用者需遵循法律法规，不得将模型用于危害国家安全或违法用途。
