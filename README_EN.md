@@ -386,6 +386,65 @@ print("Generated text:")
 print(response)
 ```
 
+### 🤗 vLLM
+
+1. Follow these steps to install vLLM
+
+```bash
+docker pull vllm/vllm-openai:v0.6.6.post1
+# Install vllm inside the docker container
+git clone https://github.com/baichuan-inc/vllm.git
+cd vllm
+export VLLM_PRECOMPILED_WHEEL_LOCATION=https://files.pythonhosted.org/packages/b0/14/9790c07959456a92e058867b61dc41dde27e1c51e91501b18207aef438c5/vllm-0.6.6.post1-cp38-abi3-manylinux1_x86_64.whl
+# For users in China, you can use the following configuration
+# export VLLM_PRECOMPILED_WHEEL_LOCATION=https://pypi.tuna.tsinghua.edu.cn/packages/b0/14/9790c07959456a92e058867b61dc41dde27e1c51e91501b18207aef438c5/vllm-0.6.6.post1-cp38-abi3-manylinux1_x86_64.whl
+pip install --editable .
+```
+
+2. Start the service
+
+```bash
+# bf16 inference
+vllm serve baichuan-inc/Baichuan-M1-14B-Instruct --trust-remote-code
+# bitsandbytes quantization inference
+vllm serve baichuan-inc/Baichuan-M1-14B-Instruct --trust-remote-code --load-format=bitsandbytes --quantization=bitsandbytes
+```
+
+3. Send the request
+
+```python
+from openai import OpenAI
+openai_api_key = "EMPTY"
+openai_api_base = "http://localhost:8000/v1"
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
+)
+
+prompt = "May I ask you some questions about medical knowledge?"
+
+chat_response = client.chat.completions.create(
+    model="baichuan-inc/Baichuan-M1-14B-Instruct",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt},
+    ]
+)
+print("Chat response:", chat_response)
+```
+
+Note: We are submitting inference support for Baichuan-M1 to the vLLM community. Users will be able to experience it with the official vLLM version in the future.
+
+### 🤗 Huawei MindIE
+
+The MindIE framework supports inference of Baichuan-M1 on Huawei Ascend chips. For usage, refer to [MindIE Baichuan-M1-14B-Base](https://modelers.cn/models/MindIE/Baichuan-M1-14B-Base)
+
+### 🤗 Huawei openMind
+
+The openMind fine-tuning suite supports fine-tuning of the Baichuan-M1 model series. For usage, refer to [openMind Baichuan-M1-14B](https://gitee.com/ascend/openmind/blob/master/docs/zh/best_practice/baichuan_m1.md)
+
+
 ---
 <a name="declare"></a>
 # 📜 License and Statement

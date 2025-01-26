@@ -388,6 +388,65 @@ print("Generated text:")
 print(response)
 ```
 
+### 🤗 vLLM
+
+1. 按照以下步骤安装vLLM
+
+```bash
+docker pull vllm/vllm-openai:v0.6.6.post1
+# docker内安装vllm
+git clone https://github.com/baichuan-inc/vllm.git
+cd vllm
+export VLLM_PRECOMPILED_WHEEL_LOCATION=https://files.pythonhosted.org/packages/b0/14/9790c07959456a92e058867b61dc41dde27e1c51e91501b18207aef438c5/vllm-0.6.6.post1-cp38-abi3-manylinux1_x86_64.whl
+# 国内用户可选用以下配置
+# export VLLM_PRECOMPILED_WHEEL_LOCATION=https://pypi.tuna.tsinghua.edu.cn/packages/b0/14/9790c07959456a92e058867b61dc41dde27e1c51e91501b18207aef438c5/vllm-0.6.6.post1-cp38-abi3-manylinux1_x86_64.whl
+pip install --editable . 
+```
+
+2. 启动服务
+
+```bash
+# bf16推理
+vllm serve baichuan-inc/Baichuan-M1-14B-Instruct --trust-remote-code
+# bitsandbytes量化推理
+vllm serve baichuan-inc/Baichuan-M1-14B-Instruct --trust-remote-code --load-format=bitsandbytes --quantization=bitsandbytes
+```
+
+3. 发送请求
+
+```python
+from openai import OpenAI
+openai_api_key = "EMPTY"
+openai_api_base = "http://localhost:8000/v1"
+
+client = OpenAI(
+    api_key=openai_api_key,
+    base_url=openai_api_base,
+)
+
+prompt = "May I ask you some questions about medical knowledge?"
+
+chat_response = client.chat.completions.create(
+    model="baichuan-inc/Baichuan-M1-14B-Instruct",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": prompt},
+    ]
+)
+print("Chat response:", chat_response)
+```
+
+注: 我们正在向vLLM社区提交对Baichuan-M1的推理支持，后续用户可以使用vLLM官方版本体验。
+
+### 🤗 华为MindIE
+
+MindIE 框架支持 Baichuan-M1 在华为昇腾芯片上的推理。使用方法参考 [MindIE Baichuan-M1-14B-Base](https://modelers.cn/models/MindIE/Baichuan-M1-14B-Base)
+
+### 🤗 华为openMind
+
+openMind微调套件支持 Baichuan-M1 系列模型的微调。使用方法参考 [openMind Baichuan-M1-14B](https://gitee.com/ascend/openmind/blob/master/docs/zh/best_practice/baichuan_m1.md)
+
+
 ---
 <a name="declare"></a>
 # 📜 协议与声明
