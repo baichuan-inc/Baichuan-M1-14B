@@ -28,6 +28,7 @@
 - [📊 Benchmark 结果](#benchmark)
 - [🚀 快速开始](#quick)
 - [📜 协议与声明](#declare)
+- [🏷️ 引用](#reference)
 
 ---
 <a name="intro"></a>
@@ -453,3 +454,16 @@ openMind微调套件支持 Baichuan-M1 系列模型的微调。使用方法参�
 如果将 Baichuan-M1 模型或其衍生品用作商业用途，请您按照如下方式联系许可方：联系邮箱：opensource.contact@baichuan-inc.com，具体信息可见 [《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan-M1-14B/blob/main/Baichuan-M1-14B模型社区许可协议.pdf)。
 
 所有使用者需遵循法律法规，不得将模型用于危害国家安全或违法用途。
+
+---
+<a name="reference"></a>
+# 引用
+如需引用我们的工作，请使用如下 reference:
+```
+@article{baichuan-m1-2025,
+  title={Baichuan-M1: Pushing the Medical Capability of Large Language Models},
+  author={Bingning Wang, Haizhou Zhao, Huozhi Zhou, Liang Song, Mingyu Xu, Wei Cheng, Xiangrong Zeng, Yupeng Zhang, Yuqi Huo, Zecheng Wang, Zhengyun Zhao and others},
+  journal={arXiv preprint arXiv:2502.12671},
+  year={2025}
+}
+```
