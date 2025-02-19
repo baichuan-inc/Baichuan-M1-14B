@@ -26,6 +26,7 @@
 - [📊 Benchmark Results](#benchmark)
 - [🚀 Quick Start](#quick)
 - [📜 License and Statment](#declare)
+- [🏷️ Reference](#reference)
 
 ---
 <a name="intro"></a>
@@ -451,3 +452,16 @@ The openMind fine-tuning suite supports fine-tuning of the Baichuan-M1 model ser
 The use of the model must comply with [《Baichuan-M1-14B模型社区许可协议》](https://github.com/baichuan-inc/Baichuan-M1-14B/blob/main/Baichuan-M1-14B模型社区许可协议.pdf).
 
 The development team of Baichuan has not developed any commercial applications based on this model. All users must comply with laws and regulations and must not use the model for harmful national security or illegal purposes.
+
+---
+<a name="reference"></a>
+# Reference
+If you need to cite our work, please use the following reference:
+```
+@article{baichuan-m1-2025,
+  title={Baichuan-M1: Pushing the Medical Capability of Large Language Models},
+  author={Bingning Wang, Haizhou Zhao, Huozhi Zhou, Liang Song, Mingyu Xu, Wei Cheng, Xiangrong Zeng, Yupeng Zhang, Yuqi Huo, Zecheng Wang, Zhengyun Zhao and others},
+  journal={arXiv preprint arXiv:2502.12671},
+  year={2025}
+}
+```
