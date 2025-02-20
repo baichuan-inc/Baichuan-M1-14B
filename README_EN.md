@@ -455,7 +455,7 @@ The development team of Baichuan has not developed any commercial applications b
 
 ---
 <a name="reference"></a>
-# Reference
+# 🏷️ Reference
 If you need to cite our work, please use the following reference:
 ```
 @article{baichuan-m1-2025,
