@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-🤗 <a href="https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Base" target="_blank">Baichuan-M1-14B-Base</a> • 🤗 <a href="https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct" target="_blank">Baichuan-M1-14B-Instruct</a> • 💬 <a href="https://y41.8if.cn/JQCj6n" target="_blank">WeChat</a>
+🤗 <a href="https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Base" target="_blank">Baichuan-M1-14B-Base</a> • 🤗 <a href="https://huggingface.co/baichuan-inc/Baichuan-M1-14B-Instruct" target="_blank">Baichuan-M1-14B-Instruct</a> • 📗 <a href="https://arxiv.org/abs/2502.12671" target="_blank">Technical Report</a> • 💬 <a href="https://y41.8if.cn/JQCj6n" target="_blank">WeChat</a>
 </p>
 
 <h4 align="center">
